@@ -41,6 +41,8 @@ jobs:
         with:
           node-version: 22
           cache: npm # or pnpm / yarn
+      - name: Setup Document Directory
+        run: cd documents/
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Install dependencies
